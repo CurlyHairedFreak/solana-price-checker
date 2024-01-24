@@ -12,7 +12,7 @@ const Main = () => {
       {solState.previousSolPrice === 0.0 && <div className="loader"></div>}
       {solState.currentSolPrice !== 0.0 && (
         <div className="flex items-center gap-2 justify-center">
-          <h3>Solana: </h3>
+          <h3 className="text-cyan-300 ">Solana: </h3>
           <p>$ {solState.currentSolPrice}</p>
           <FontAwesomeIcon
             icon={icon}
