@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <main className="mt-12 text-lg text-cyan-300">
       {solState.previousSolPrice === 0.0 && <div className="loader"></div>}
-      {solState.currentSolPrice !== 0.0 && (
+      {solState.currentSolPrice > 0.0 && (
         <div className="flex items-center gap-2 justify-center">
           <h3 className="text-cyan-300 ">Solana: </h3>
           <p> $ {solState.currentSolPrice}</p>
